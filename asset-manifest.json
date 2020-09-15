@@ -1,32 +1,22 @@
 {
   "files": {
-    "main.css": "/aniruddh/static/css/main.d7ae14ea.chunk.css",
-    "main.js": "/aniruddh/static/js/main.52bc7c97.chunk.js",
-    "main.js.map": "/aniruddh/static/js/main.52bc7c97.chunk.js.map",
+    "main.css": "/aniruddh/static/css/main.57bd2f13.chunk.css",
+    "main.js": "/aniruddh/static/js/main.82712447.chunk.js",
+    "main.js.map": "/aniruddh/static/js/main.82712447.chunk.js.map",
     "runtime-main.js": "/aniruddh/static/js/runtime-main.c9cc6c52.js",
     "runtime-main.js.map": "/aniruddh/static/js/runtime-main.c9cc6c52.js.map",
-    "static/js/2.65d1a2da.chunk.js": "/aniruddh/static/js/2.65d1a2da.chunk.js",
-    "static/js/2.65d1a2da.chunk.js.map": "/aniruddh/static/js/2.65d1a2da.chunk.js.map",
+    "static/js/2.3e2e20de.chunk.js": "/aniruddh/static/js/2.3e2e20de.chunk.js",
+    "static/js/2.3e2e20de.chunk.js.map": "/aniruddh/static/js/2.3e2e20de.chunk.js.map",
     "index.html": "/aniruddh/index.html",
-    "precache-manifest.91f5027916e6d12bf9d3e8ac8ba83d7f.js": "/aniruddh/precache-manifest.91f5027916e6d12bf9d3e8ac8ba83d7f.js",
+    "precache-manifest.7c0aa1111deb1dcaf4d622fb85efd36a.js": "/aniruddh/precache-manifest.7c0aa1111deb1dcaf4d622fb85efd36a.js",
     "service-worker.js": "/aniruddh/service-worker.js",
-    "static/css/main.d7ae14ea.chunk.css.map": "/aniruddh/static/css/main.d7ae14ea.chunk.css.map",
-    "static/js/2.65d1a2da.chunk.js.LICENSE.txt": "/aniruddh/static/js/2.65d1a2da.chunk.js.LICENSE.txt",
-    "static/media/image0.png": "/aniruddh/static/media/image0.283a0224.png",
-    "static/media/image1.png": "/aniruddh/static/media/image1.c975ca7d.png",
-    "static/media/image2.png": "/aniruddh/static/media/image2.1718974c.png",
-    "static/media/image3.png": "/aniruddh/static/media/image3.291bd6a6.png",
-    "static/media/image4.png": "/aniruddh/static/media/image4.2a490ee7.png",
-    "static/media/image5.png": "/aniruddh/static/media/image5.c28954f5.png",
-    "static/media/image6.png": "/aniruddh/static/media/image6.8defa185.png",
-    "static/media/image7.png": "/aniruddh/static/media/image7.9856ec8d.png",
-    "static/media/image8.png": "/aniruddh/static/media/image8.d980507b.png",
-    "static/media/image9.png": "/aniruddh/static/media/image9.208734f0.png"
+    "static/css/main.57bd2f13.chunk.css.map": "/aniruddh/static/css/main.57bd2f13.chunk.css.map",
+    "static/js/2.3e2e20de.chunk.js.LICENSE.txt": "/aniruddh/static/js/2.3e2e20de.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c9cc6c52.js",
-    "static/js/2.65d1a2da.chunk.js",
-    "static/css/main.d7ae14ea.chunk.css",
-    "static/js/main.52bc7c97.chunk.js"
+    "static/js/2.3e2e20de.chunk.js",
+    "static/css/main.57bd2f13.chunk.css",
+    "static/js/main.82712447.chunk.js"
   ]
 }
