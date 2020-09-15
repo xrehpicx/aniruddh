@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/aniruddh/static/css/main.ce2dd59c.chunk.css",
-    "main.js": "/aniruddh/static/js/main.2a7cb4e0.chunk.js",
-    "main.js.map": "/aniruddh/static/js/main.2a7cb4e0.chunk.js.map",
+    "main.js": "/aniruddh/static/js/main.a7f1ac0c.chunk.js",
+    "main.js.map": "/aniruddh/static/js/main.a7f1ac0c.chunk.js.map",
     "runtime-main.js": "/aniruddh/static/js/runtime-main.c9cc6c52.js",
     "runtime-main.js.map": "/aniruddh/static/js/runtime-main.c9cc6c52.js.map",
     "static/js/2.e7e3e663.chunk.js": "/aniruddh/static/js/2.e7e3e663.chunk.js",
     "static/js/2.e7e3e663.chunk.js.map": "/aniruddh/static/js/2.e7e3e663.chunk.js.map",
     "index.html": "/aniruddh/index.html",
-    "precache-manifest.268a4e6828d531f6cf67769daff40ab0.js": "/aniruddh/precache-manifest.268a4e6828d531f6cf67769daff40ab0.js",
+    "precache-manifest.f27d88ef70f6d7d69f94c22c78780e0e.js": "/aniruddh/precache-manifest.f27d88ef70f6d7d69f94c22c78780e0e.js",
     "service-worker.js": "/aniruddh/service-worker.js",
     "static/css/main.ce2dd59c.chunk.css.map": "/aniruddh/static/css/main.ce2dd59c.chunk.css.map",
     "static/js/2.e7e3e663.chunk.js.LICENSE.txt": "/aniruddh/static/js/2.e7e3e663.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.c9cc6c52.js",
     "static/js/2.e7e3e663.chunk.js",
     "static/css/main.ce2dd59c.chunk.css",
-    "static/js/main.2a7cb4e0.chunk.js"
+    "static/js/main.a7f1ac0c.chunk.js"
   ]
 }
