@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Grid from "./components/Grid";
 import axios from "axios";
 import User from "./components/User";
-
+import Button from "@material-ui/core/Button";
 import bgimage from "./components/bgimage.jpeg";
 function App() {
   const [insta, setInsta] = useState({});
@@ -33,6 +33,29 @@ function App() {
           }
         />
       </div>
+      {window.innerWidth <= 600 ? <DesktopWarn /> : <></>}
+    </div>
+  );
+}
+function DesktopWarn() {
+  const [state, setState] = useState(true);
+
+  useEffect(() => {
+    // setTimeout(() => setState(false), 5000);
+  }, []);
+
+  return (
+    <div
+      className="mobile-warning"
+      style={{ opacity: state ? "1" : "0", pointerEvents: state ? "" : "none" }}
+    >
+      <p>View on desktop for best view</p>
+      <Button
+        onClick={() => setTimeout(() => setState(false), 400)}
+        variant="outlined"
+      >
+        view anyway
+      </Button>
     </div>
   );
 }

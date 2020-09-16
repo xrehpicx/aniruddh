@@ -52,9 +52,50 @@
   line-height: 1.6rem;
 }
 
+.user .screen-saver {
+  color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  z-index: 100;
+  right: 20px;
+  top: 20px;
+  opacity: .8;
+}
+
+.user .screen-saver p {
+  margin-right: 5px;
+}
+
 .profile-photo img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact p {
+  color: rgba(255, 255, 255, 0.33);
+  font-size: .8rem;
+  cursor: pointer;
+}
+
+.contact span {
+  color: rgba(255, 255, 255, 0.658);
+  font-size: 1.2rem;
+  margin-left: 5px;
 }
 /*# sourceMappingURL=user.css.map */

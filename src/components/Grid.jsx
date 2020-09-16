@@ -10,8 +10,14 @@ function rotate(array) {
 }
 function Grid({ edges }) {
   const columns = useMedia(
-    ["(min-width: 1500px)", "(min-width: 1000px)", "(min-width: 600px)"],
-    [4, 3, 2],
+    [
+      "(min-width: 2400px)",
+      "(min-width: 1900px)",
+      "(min-width: 1500px)",
+      "(min-width: 1000px)",
+      "(min-width: 600px)",
+    ],
+    [6, 5, 4, 3, 2],
     1
   );
 
@@ -20,6 +26,8 @@ function Grid({ edges }) {
   // Hook3: Hold items
   const [items, set] = useState([]);
   const [rs, setRs] = useState(columns === 1 ? false : true);
+  const [fs, setFs] = useState(false);
+
   useEffect(() => {
     (async () => {
       let images = [];
@@ -37,6 +45,7 @@ function Grid({ edges }) {
   useEffect(() => {
     const rotateInterval = setInterval(() => set(rotate), 3000);
     const shuffelInterval = setInterval(() => set(shuffle), 10000);
+    // console.log((screenSaver.ss = true));
 
     if (!rs) {
       try {
@@ -44,13 +53,34 @@ function Grid({ edges }) {
         clearInterval(shuffelInterval);
       } catch (error) {}
     }
-    return () => {
+
+    const fsshuffelInterval = setInterval(() => set(shuffle), 3000);
+
+    if (fs) {
       try {
         clearInterval(rotateInterval);
         clearInterval(shuffelInterval);
       } catch (error) {}
+    } else {
+      clearInterval(fsshuffelInterval);
+    }
+    const onfullscreen = (event) => {
+      if (document.fullscreenElement) {
+        setFs(true);
+      } else {
+        setFs(false);
+      }
     };
-  }, [rs]);
+    document.addEventListener("fullscreenchange", onfullscreen);
+
+    return () => {
+      try {
+        clearInterval(rotateInterval);
+        clearInterval(shuffelInterval);
+        document.removeEventListener("fullscreenchange", onfullscreen);
+      } catch (error) {}
+    };
+  }, [rs, fs]);
   // Form a grid of stacked items using width & columns we got from hooks 1 & 2
   let heights = new Array(columns).fill(0); // Each column gets a height starting with zero
   let gridItems = items.map((child, i) => {
@@ -72,27 +102,31 @@ function Grid({ edges }) {
   });
   // Render the grid
   return (
-    <div {...bind} className="list" style={{ height: Math.max(...heights) }}>
-      {transitions.map(({ item, props: { xy, ...rest }, key }) => (
-        <a.div
-          key={key}
-          style={{
-            transform: xy.interpolate((x, y) => `translate3d(${x}px,${y}px,0)`),
-            ...rest,
-          }}
-        >
-          <div
-            className={rs ? "" : "active-image"}
-            // onMouseDown={() => setRs(false)}
-            // onMouseUp={() => setRs(true)}
-            onClick={() =>
-              window.open(`https://www.instagram.com/p/${item.code}/`)
-            }
-            style={{ backgroundImage: item.css }}
-          />
-        </a.div>
-      ))}
-    </div>
+    <>
+      <div {...bind} className="list" style={{ height: Math.max(...heights) }}>
+        {transitions.map(({ item, props: { xy, ...rest }, key }) => (
+          <a.div
+            key={key}
+            style={{
+              transform: xy.interpolate(
+                (x, y) => `translate3d(${x}px,${y}px,0)`
+              ),
+              ...rest,
+            }}
+          >
+            <div
+              className={rs ? "" : "active-image"}
+              // onMouseDown={() => setRs(false)}
+              // onMouseUp={() => setRs(true)}
+              onClick={() =>
+                window.open(`https://www.instagram.com/p/${item.code}/`)
+              }
+              style={{ backgroundImage: item.css }}
+            />
+          </a.div>
+        ))}
+      </div>
+    </>
   );
 }
 
