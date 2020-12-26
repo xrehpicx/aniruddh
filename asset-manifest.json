@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/aniruddh/static/css/main.2e28c845.chunk.css",
-    "main.js": "/aniruddh/static/js/main.05ad3c6b.chunk.js",
-    "main.js.map": "/aniruddh/static/js/main.05ad3c6b.chunk.js.map",
+    "main.js": "/aniruddh/static/js/main.5b9bff69.chunk.js",
+    "main.js.map": "/aniruddh/static/js/main.5b9bff69.chunk.js.map",
     "runtime-main.js": "/aniruddh/static/js/runtime-main.c9cc6c52.js",
     "runtime-main.js.map": "/aniruddh/static/js/runtime-main.c9cc6c52.js.map",
-    "static/js/2.6e2a0a86.chunk.js": "/aniruddh/static/js/2.6e2a0a86.chunk.js",
-    "static/js/2.6e2a0a86.chunk.js.map": "/aniruddh/static/js/2.6e2a0a86.chunk.js.map",
+    "static/js/2.8c26da11.chunk.js": "/aniruddh/static/js/2.8c26da11.chunk.js",
+    "static/js/2.8c26da11.chunk.js.map": "/aniruddh/static/js/2.8c26da11.chunk.js.map",
     "index.html": "/aniruddh/index.html",
-    "precache-manifest.003286fdc9cb5d8c925582c210103d76.js": "/aniruddh/precache-manifest.003286fdc9cb5d8c925582c210103d76.js",
+    "precache-manifest.eced5f32c1585d2f94a06de8ca3c2255.js": "/aniruddh/precache-manifest.eced5f32c1585d2f94a06de8ca3c2255.js",
     "service-worker.js": "/aniruddh/service-worker.js",
     "static/css/main.2e28c845.chunk.css.map": "/aniruddh/static/css/main.2e28c845.chunk.css.map",
-    "static/js/2.6e2a0a86.chunk.js.LICENSE.txt": "/aniruddh/static/js/2.6e2a0a86.chunk.js.LICENSE.txt"
+    "static/js/2.8c26da11.chunk.js.LICENSE.txt": "/aniruddh/static/js/2.8c26da11.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c9cc6c52.js",
-    "static/js/2.6e2a0a86.chunk.js",
+    "static/js/2.8c26da11.chunk.js",
     "static/css/main.2e28c845.chunk.css",
-    "static/js/main.05ad3c6b.chunk.js"
+    "static/js/main.5b9bff69.chunk.js"
   ]
 }
